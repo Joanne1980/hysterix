@@ -3,11 +3,20 @@
     padding: 0;
     width: 100%;
     background: black;
+    position: relative;
   }
   
   #header-content {
     margin: 0px auto;
     width: 800px;
+    position: absolute;
+    
+  }
+  
+  .navbar {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
   }
 
 
