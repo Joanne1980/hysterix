@@ -1,9 +1,7 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.http import HttpResponse
 
 # Create your views here.
-class Bio(TemplateView):
-    """
-    displays home HomePage
-    """
-    template_name = 'bio.html'
+
+def bio (request):
+    return HttpResponse("hello, world")
