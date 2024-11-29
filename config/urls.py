@@ -19,6 +19,8 @@ from django.urls import path, include
 from bio import views as bio_views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path("", bio_views.bio, name='bio'),
+    path("accounts/", include("allauth.urls")),
+    path('admin/', admin.site.urls),
+    path('summernote/', include('django_summernote.urls')),
 ]
