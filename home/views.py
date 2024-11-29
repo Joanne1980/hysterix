@@ -1,7 +1,5 @@
 from django.views.generic import TemplateViews
 
-
 # Create your views here.
-
-class bio(TemplateViews):
-  template_name = 'bio/bio.html'
+class index(TemplateViews):
+    template_name = 'home/index.html'

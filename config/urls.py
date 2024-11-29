@@ -16,11 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from bio import views as bio_views
+
 
 urlpatterns = [
-    path("", bio_views.bio, name='bio'),
     path("accounts/", include("allauth.urls")),
     path('admin/', admin.site.urls),
+    path('', include('bio.html')),
+    path('', include('home.urls')),
     path('summernote/', include('django_summernote.urls')),
 ]
