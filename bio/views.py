@@ -1,7 +1,7 @@
-from django.views.generic import TemplateViews
+from django.views.generic import TemplateView
 
 
 # Create your views here.
 
-class bio(TemplateViews):
-  template_name = 'bio/bio.html'
+class bio(TemplateView):
+    template_name = 'bio/bio.html'

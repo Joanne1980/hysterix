@@ -1,5 +1,5 @@
-from django.views.generic import TemplateViews
+from django.views.generic import TemplateView
 
 # Create your views here.
-class index(TemplateViews):
+class index(TemplateView):
     template_name = 'home/index.html'
